@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel - SafeReport</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="brand"><a href="index.html" style="color:inherit;text-decoration:none;">Safe<span>Report</span></a></div>
+  <div>
+    <a href="dashboard.html">My Cases</a>
+    <a href="admin.html">Admin Panel</a>
+    <button id="logoutBtn">Logout</button>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <h1>Admin: All Cases</h1>
+    <p class="subtitle">Only accessible to admin accounts. Update the status of any case here.</p>
+    <div id="casesList">Loading...</div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
